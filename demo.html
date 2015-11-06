@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery　val  获取值，设置值扩展</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+<body>
+<input name="kao" type="text" value="sdfasfsdaf">
+<input name="checkbox" type="checkbox" value="1" checked/>
+<input name="checkbox" type="checkbox" value="2" checked>
+<hr>
+<input type="radio" name="radio" value="1"/>
+<input type="radio" name="radio" value="2" checked/>
+<hr>
+<select name="select">
+    <option value="11">1111</option>
+    <option value="22">2222</option>
+    <option value="33">33</option>
+</select>
+<script type="text/javascript" src="jquery.value.js"></script>
+<script type="text/javascript">
+    $('kao').value('aaaaaaa');
+    //console.info($('checkbox').value());
+    //console.info($('input[name="checkbox"]:checked').val());
+    //console.info($('radio').value());
+    console.info($('checkbox').value(''));
+    //console.info($('select').value('33'));
+    //$('radio').value('2');
+</script>
+</body>
+</html>
